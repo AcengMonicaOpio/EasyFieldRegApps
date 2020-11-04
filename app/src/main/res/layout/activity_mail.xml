@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MailActivity">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:text="You can share emails to individuals using this platform by separating each email with a comma "
+        android:textColor="#000"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFBABABA"/>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/editTextTo"
+    android:layout_marginTop="30dp"
+    android:inputType="textEmailAddress"
+    android:textSize="25sp"
+    android:hint="E-mail Address"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/editTextSubject"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:inputType="textEmailSubject"
+        android:hint="Subject"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:id="@+id/editTextMessage"
+        android:inputType="textLongMessage"
+        android:hint="Message"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="Send"
+        android:id="@+id/send"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
